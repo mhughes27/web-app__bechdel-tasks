@@ -1,0 +1,28 @@
+.supercontainer{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+}
+
+.maincontent{
+	display: flex;
+	flex: 1;
+}
+.top1 {
+	flex: 0 0 12em;
+	background-color: orange;
+}
+
+.top2{
+	flex: 0 0 12em;
+	background-color: blue;
+}
+
+.main{
+	flex: 1;
+	background-color: red;
+}
+.bottom{
+	flex: 0 0 20em;
+	background: yellow;
+}
