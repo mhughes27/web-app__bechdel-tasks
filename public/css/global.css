@@ -1,4 +1,115 @@
-.bechdel-test-info {
+.supercontainer{
+  display: flex;
+  min-height: 100vh;
+  padding-right: 400px;
+  padding-left: 400px;
+}
+
+.contain{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.top1{
+  height: 60px;
+  width: 100%;
+  background-color: #FFFFFF;
+  font-size: 8px;
+  color: grey;
+  display: inline-block;
+}
+.home__link{
+  text-decoration: none;
+  color:grey;
+}
+.linksList{
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.links{
+  
+  text-decoration: none;
+  color: grey;
+
+}
+
+
+.top2{
+  height: 90px;
+ 
+  background-color: #1b1c1e;
+  color: grey;
+  font-size: 6px;
+  padding-left: 100px;
+}
+
+
+.contents{
+  display: flex;
+  height: 300px;
+  flex: 1;
+  background-color: #000000;
+  justify-content: center;
+  color:white;
+}
+.random__title{
+  color:white;
+  font-size: 12px;
+
+}
+.random__director{
+  color:white;
+  font-size: 10px;
+
+}
+.random__poster{
+  height:180px;
+  width: 130px;
+
+}
+.random__another{
+  color:purple;
+
+}
+.bottom{
+  display: flex;
+  height:180px;
+  width: 100%;
+  background-image: url("/images/old-movie.jpg");
+  background-size: 100% 100%;
+  justify-content: center;
+ 
+}
+
+
+
+.pass__poster{
+  height:75px;
+  width:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.bechdel-test-info {
   background-color: rgb(27, 28, 29);
   color: #999;
   padding-top: 20px;
@@ -32,9 +143,9 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-
+*/
 /* todo this gets ugly on small screens */
-.block-bollywood-bg{
+/*.block-bollywood-bg{
   background: url(/images/shree-420.jpg) center -240px;
   background-size: cover;
   border-top: 1px solid #666;
@@ -47,4 +158,4 @@
   margin-top: 51px;
   color: #999;
   font-size: 20px;
-}
+}*/

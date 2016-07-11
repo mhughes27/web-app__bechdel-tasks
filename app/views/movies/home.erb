@@ -1,34 +1,33 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
 
 
 <div class="top2">
-  <div class="container">
-    <h3>The Bechdel Test</h3>
+  <div class="container bechdel">
+    <h3 class="bechdel__title">The Bechdel Test</h3>
 
-    <h4>
+    <h4 class="bechdel__criteria">
       1. The movie has to have at least two women in it...<br>
       2. ...who talk to each other<br>
       3. ...about something besides a man.
     </h4>
 
-    <p>
+    <p class="bechdel__link">
       <a href="https://en.wikipedia.org/wiki/Bechdel_test">Find out more about the Bechdel Test.</a>
     </p>
   </div>
 </div>
 
-<div class="maincontent">
-  <div>
-    <h1>
+<div class="contents">
+  <div class="random">
+    <h1 class="random__title">
       <%= @new_movie.title %><br>
-      <small>directed by <%= @new_movie.director %></small>
+      <small class="random__director">directed by <%= @new_movie.director %></small>
     </h1>
 
     <a href="movies/<%= @new_movie.id %>/view">
-      <img src="<%= @new_movie.image %>" alt="<%=@new_movie.title%>">
+      <img class="random__poster" src="<%= @new_movie.image %>" alt="<%=@new_movie.title%>">
     </a>
 
-    <div>
+    <div class="random__another">
       <a href="/">Get Another Movie</a>
     </div>
   </div>

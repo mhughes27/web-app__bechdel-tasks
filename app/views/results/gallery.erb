@@ -1,22 +1,22 @@
-<div>
-  <div class="container">
-    <h3>The Bechdel Test</h3>
+<div class="top2">
+  <div class="container bechdel">
+    <h3 class="bechdel__title">The Bechdel Test</h3>
 
-    <h4>
+    <h4 class="bechdel__criteria">
       1. The movie has to have at least two women in it...<br>
       2. ...who talk to each other<br>
       3. ...about something besides a man.
     </h4>
 
     <p>
-      <a href="https://en.wikipedia.org/wiki/Bechdel_test">Find out more about the Bechdel Test.</a>
+      <a class="bechdel__link" href="https://en.wikipedia.org/wiki/Bechdel_test">Find out more about the Bechdel Test.</a>
     </p>
   </div>
 </div>
 
-<div>
-  <div class="container">
-    <h1>
+<div class="contents">
+  <div class="container pass">
+    <h1 class="pass__title">
       Bechdel Gallery
     </h1>
 
@@ -24,11 +24,9 @@
       <% @bechdel_pass.each_with_index do |movie, i| %>
         <div class="movie">
           <a href="/movies/<%= movie.movie_id %>/view">
-            <img src="<%= movie.movie_info.image %>">
+            <img class="pass__poster" src="<%= movie.movie_info.image %>">
           </a>
-          <a>
-            <img src="/badge.png">
-          </a>
+          
 
 
         </div>

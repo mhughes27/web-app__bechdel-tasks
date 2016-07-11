@@ -8,35 +8,37 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <!-- added css style sheet -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
 
     <title>Bollywood Bechdel</title>
   </head>
 
-<body>
+<body class="supercontainer">
+<div class="contain">
 
 <nav>
   <!-- added homepage link -->
   <div class="home">
-    <a href="/">Bollywood Bechdel</a>
+    <a class="home__link" href="/">Bollywood Bechdel</a>
+  </div>
 
   <div class="container">
-    <ul>
+    <ul class="linksList">
       <li>
-        <a href="/results/list">Bechdel Gallery</a>
+        <a class="links" href="/results/list">Bechdel Gallery</a>
       </li>
 
       <li>
-        <a href="/results/completelist">Top 100 Bollywood Movies</a>
+        <a class="links" href="/results/completelist">Rated Movies</a>
       </li>
 
       <% if @current_user == nil %>
       	<li class="active">
-          <a href="/users/new">Create account</a>
+          <a class="links" href="/users/new">Create account</a>
         </li>
 
         <li class="active">
-          <a href="/login">Log in</a>
+          <a class="links" href="/login">Log in</a>
         </li>
       <% else %>
        	<li class="active">
@@ -66,13 +68,13 @@
 <!-- Then the combined layout + view is sent back to the client. -->
 <%= yield %>
 
-<div>
-  <div class="container">
-    <p>
+<div class="bottom">
+  <div class="container find">
+    <p class="find__header">
       Find a Bollywood movie with <strong>strong</strong> female characters.
     </p>
 
-    <form action="/movies/search" method="post">
+    <form class="find__form" action="/movies/search" method="post">
       <select name="search_category">
         <option selected disabled>Choose category</option>
         <option value= "title">Title</option>
@@ -96,7 +98,7 @@
     </form>
   </div>
 </div>
-
+</div>
 </body>
 
 </html>

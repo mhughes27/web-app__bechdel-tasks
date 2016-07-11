@@ -3,6 +3,7 @@ MyApp.get "/results/list" do
   erb :"results/gallery"
 end
 
+# added complete list page not linking correctly
 MyApp.get "results/completelist" do
   erb :"results/completelist"
 end
