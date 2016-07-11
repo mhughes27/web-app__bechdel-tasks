@@ -26,6 +26,15 @@ class Result < ActiveRecord::Base
 		end
 	end
   
+  # added function to display list of rated movies on a page
+  def Result.rated
+    results=Result
+    if results.empty?
+      return nil
+    else
+      return results
+    end
+  end
  # Checks to see if a Movie object passes the bechdel test
  #
  # Returns Boolean

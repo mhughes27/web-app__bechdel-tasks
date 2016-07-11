@@ -4,8 +4,9 @@ MyApp.get "/results/list" do
 end
 
 # added complete list page not linking correctly
-MyApp.get "results/completelist" do
-  erb :"results/completelist"
+MyApp.get "results/rated" do
+  @bechdel_rated=Result.rated
+  erb :"results/rated"
 end
 
 MyApp.post "/results/:id/add" do

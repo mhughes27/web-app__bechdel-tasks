@@ -10,6 +10,7 @@
 		This movie has not yet been rated using the Bechdel test.
 	<% elsif @movie.result.is_bechdel == true %>
 		This movie <strong>passes</strong> the Bechdel test!
+		<img class="badge" src="/images/badge.png">
 
 	<% else @movie.result.is_bechdel == false %>
 		This movie <strong>does not pass</strong> the Bechdel test.

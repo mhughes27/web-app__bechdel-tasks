@@ -22,10 +22,12 @@
 .home__link{
   text-decoration: none;
   color:grey;
+  font-size: 8px;
 }
 .linksList{
   list-style-type: none;
   display: inline-block;
+  font-size: 8px;
 
 }
 
@@ -73,6 +75,12 @@
 .random__another{
   color:purple;
 
+}
+
+.pass{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .bottom{
   display: flex;

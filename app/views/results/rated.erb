@@ -15,16 +15,16 @@
 </div>
 
 <div class="contents">
-  <div class="container pass">
-    <h1 class="pass__title">
-      Bechdel Gallery
+  <div class="container rated">
+    <h1 class="rated__title">
+      Rated Movies
     </h1>
 
-    <% if @bechdel_pass != nil %>
+    <% if @bechdel_rated != nil %>
       <% @bechdel_pass.each_with_index do |movie, i| %>
-        <div class="movie pass">
+        <div class="movie rated">
           <a href="/movies/<%= movie.movie_id %>/view">
-            <img class="pass__poster" src="<%= movie.movie_info.image %>">
+            <img class="rated__poster" src="<%= movie.movie_info.image %>">
           </a>
           
 

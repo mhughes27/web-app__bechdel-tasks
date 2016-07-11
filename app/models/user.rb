@@ -26,4 +26,19 @@ class User < ActiveRecord::Base
     	@errors << "Must choose a password"
   	end
 	end
+
+
+# added weak password not tested
+  def weakPassword
+    if self.password.length < 8
+      @errors << "Must choose a password with atleast 8 characters"
+    end
+  end
+
+
+
+
+
+
+
 end
