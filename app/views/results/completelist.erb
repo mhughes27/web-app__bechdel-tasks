@@ -17,20 +17,16 @@
 <div>
   <div class="container">
     <h1>
-      Bechdel Gallery
+      Top 100 Bollywood Gallery
     </h1>
 
-    <% if @bechdel_pass != nil %>
+    <% if @bechdel_pass != nil || @bechdel_pass == nil%>
       <% @bechdel_pass.each_with_index do |movie, i| %>
         <div class="movie">
           <a href="/movies/<%= movie.movie_id %>/view">
             <img src="<%= movie.movie_info.image %>">
+            <img src="badge.png">
           </a>
-          <a>
-            <img src="/badge.png">
-          </a>
-
-
         </div>
       <% end %>
     <% else %>
