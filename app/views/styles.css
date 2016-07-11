@@ -1,28 +1,39 @@
 .supercontainer{
 	display: flex;
 	min-height: 100vh;
-	flex-direction: row;
+	padding-right: 400px;
+	padding-left: 400px;
+	
+
 }
 
-.maincontent{
+.contain{
 	display: flex;
+	flex-direction: column;
 	flex: 1;
 }
-.top1 {
-	flex: 0 0 12em;
-	background-color: orange;
+
+.top1{
+	height: 60px;
+	width: 100%;
+	background-color: #FFFFFF;
 }
 
 .top2{
-	flex: 0 0 12em;
-	background-color: blue;
+	height: 90px;
+	width: 100%;
+	background-color: #1b1c1e;
 }
 
-.main{
+
+.contents{
+	height: 300px;
 	flex: 1;
-	background-color: red;
+	background-color: #000000;
 }
 .bottom{
-	flex: 0 0 20em;
-	background: yellow;
+	height:180px;
+	width: 100%;
+	background-image: url("old-movie.jpg");
+	background-size: 100% 100%;
 }
